@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+    <title>Memory Matrix Game</title>
+
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <link rel="stylesheet" href="css/memorymatrixgame.css" />
+    <script type="text/javascript" src="libs/memorymatrixgame.js"></script>
+    <script type="text/javascript" src="js/jquery.tap.js"></script>
+
+</head>
+
+<body>
+
+<div id="main-window" >
+    <!--
+    <div id="game-background-container">
+        <img id="game-background" src="images/background.png" width="1024" height="768" />
+    </div>
+    -->
+
+    <div id="game-container">
+        <div id="screen-container">
+            <img id="box1" src="images/emptybox.png" />
+            <img id="box2" src="images/correctbox.png" />
+            <img id="box3" src="images/wrongbox.png" />
+        </div>
+    </div>
+
+    <div id="game-level">
+        <div class="game-box-title">Level <span class="game-box-text"><span id="game-level-text" >0</span></span>
+        </div>
+    </div>
+    
+    <!--
+    <div id="game-life">
+        <div class="game-box-title">Life <span class="game-box-text"><span id="game-life-text" >3</span></span>
+        </div>
+    </div>
+    <div id="game-score">
+        <div class="game-box-title">Score <span class="game-box-text"><span id="game-score-text" >0</span></span></div>
+    </div>
+
+-->
+
+</div>
+    
+    <div id="start-game-container">
+        <div>
+            <div id="start-game-text">Memory Matrix</div><br />
+            <div id="start-game-btn" class="button" onclick="MemoryMatrixGame.startButtonPressed();">Start Game</div><br />
+            <div id="start-game-tips">Tips: Keep in mind the blazing boxes and select again.</div>
+        </div>
+    </div>
+    
+    <div id="game-over-container">
+        <div>
+            <div id="game-over-text">Game Over</div><br />
+        <div id="game-over-btn" class="button" onclick="MemoryMatrixGame.startButtonPressed();">Play Again</div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
